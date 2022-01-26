@@ -1,3 +1,11 @@
+:root {
+  --cream: #FFEFE7;
+  --pale-pink: #FFD2CE;
+  --medium-pink: #FCA9AE;
+  --dark-pink: #E4626B;
+  --black: #140200;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +21,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--menu {
+  display: flex;
+  gap: 2em;
 }
