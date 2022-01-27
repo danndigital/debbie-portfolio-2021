@@ -16,7 +16,7 @@ body {
   background-color: var(--cream);
   background-image: url("../public/images/wave.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 600px;
   color: var(--black);
 }
 
@@ -71,7 +71,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 2em;
+  margin: 1em;
 }
 
 .nav-links {
@@ -112,11 +112,14 @@ nav {
 /* ========== HEADER ========== */
 
 header {
-  display: grid;
-  grid-template-columns: repeat(autofill, 1fr 1fr);
-  gap: 10px 0px;
-  justify-items: center;
-  align-items: center;
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+ justify-content: center;
+}
+
+.header-img {
+    order: -1;
 }
 
 .header-title span {
@@ -125,7 +128,7 @@ header {
 
 .header-copy {
     margin: 1em 0;
-    width: 85%;
+    width: 90%;
     font-size: 1.125rem;
 }
 
@@ -144,8 +147,40 @@ header {
     header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 0px;
+  gap: 1em 0;
   justify-items: center;
   align-items: center;
 }
+
+.header-copy {
+    width: 85%;
+}
+.header-section {
+    order: -1;
+}
+}
+/* ========== SKILLS ========== */
+
+.skills {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    font-size: 5rem;
+    color: var(--dark-pink);
+}
+
+.skill p {
+    font-size: 1.87rem;
+    margin-top: 1em;
+    font-family: oswald;
 }

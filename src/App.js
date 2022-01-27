@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+
 import Nav from "./components/Nav";
 import Home from "./components/Home"
 import Dosha from "./components/Dosha";
@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Nav />
       <div className="container">
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="dosha" element={<Dosha />} />
