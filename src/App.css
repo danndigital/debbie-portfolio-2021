@@ -154,7 +154,7 @@ header {
 .header-btn:focus {
   background-color: var(--medium-pink);
   color: var(--black);
-  -webkit-transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -257,10 +257,7 @@ a:focus {
   grid-template-areas: "project-img-container project-details";
 }
 
-.project-img-container {
-  grid-area: project-img-container;
-  position: relative;
-}
+
 
 .project-details {
   display: grid;
@@ -288,23 +285,46 @@ a:focus {
 
 .project-tech {
   grid-area: project-tech;
+  display: flex;
+  gap: 1em;
 }
 
 .project-tech p {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  border: 1px solid var(--medium-pink);
+  padding: 0.75em 2em;
 }
 
 .project-links {
   grid-area: project-links;
-  
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+}
+
+.project-links a {
+  padding: 0.75em 2em;
+  background-color: var(--dark-pink);
+  color: white;
+}
+.project-links a:hover {
+  color: var(--black);
+  background-color: var(--medium-pink);
+   -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.project-img-container {
+  grid-area: project-img-container;
+  position: relative;
 }
 
 .project-img {
+    position:absolute;
   width: 300px;
   height: 300px;
   border: 10px solid white;
-  position: absolute;
   z-index: 1;
 }
 
@@ -314,6 +334,6 @@ a:focus {
   position: absolute;
   background-color: var(--medium-pink);
   z-index: -1;
-  transform: rotate(5deg);
+  transform: rotate(7deg);
   transform-origin: bottom left;
 }
