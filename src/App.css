@@ -159,10 +159,39 @@ header {
     order: -1;
 }
 }
+
+/* ========== FOOTER ========== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.footer-social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1em;
+}
+
+.footer-social-links a:hover, a:focus {
+    color: var(--pale-pink);
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding: 0.5em 4em;
+    }
+}
+
 /* ========== SKILLS ========== */
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
     margin: 2em 0;
@@ -175,12 +204,21 @@ header {
 }
 
 .skill-icon {
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--dark-pink);
 }
 
 .skill p {
-    font-size: 1.87rem;
+    font-size: 1.25rem;
     margin-top: 1em;
     font-family: oswald;
+}
+
+@media only screen and (min-width: 768px) { 
+.skill-icon {
+    font-size: 5rem;
+}
+.skill p {
+    font-size: 1.87rem;
+}
 }
