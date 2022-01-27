@@ -2,7 +2,7 @@ const Projects = () => {
   const project = [
     {
       name: "Notes App",
-      thumbnail: "./media/notes.png",
+      thumbnail: "../images/notes.png",
       copy: "A CRUD application to store and edit notes using React and TailwindCSS.",
       caseStudy: "/Notes",
       link: "https://awesome-lamport-4fcaff.netlify.app/",
@@ -10,7 +10,7 @@ const Projects = () => {
     },
     {
       name: "React Weather App",
-      thumbnail: "./media/react-weather.png",
+      thumbnail: "../images/yoga-website.png",
       copy: "A weather app built with React and API intergration for my SheCodes Workshop project.",
       caseStudy: "/WeatherApp",
       link: "https://ecstatic-swartz-7b404c.netlify.app/",
@@ -18,7 +18,7 @@ const Projects = () => {
     },
     {
       name: "Ayurveda Dosha Quiz",
-      thumbnail: "./media/dosha-quiz.png",
+      thumbnail: "../images/dosha.png",
       copy: "I created a quiz from scratch to implement what I've learnt about React.",
       caseStudy: "/Dosha",
       link: "https://cranky-curran-3d406a.netlify.app/",
@@ -28,23 +28,30 @@ const Projects = () => {
 
   return (
     <section>
-      <h3 className="projects-title">Projects</h3>
+      <h2 className="projects-title">Projects</h2>
       <div className="projects">
         {project.map(function (project, index) {
             return (
               <article key={index} className="project-card">
-                <img src={project.thumbnail} alt="project-title" />
+                <div className="project-img-container">
+                  <img
+                    src={project.thumbnail}
+                    alt={project.name}
+                    className="project-img"
+                  />
+                  <div className="project-img-background"></div>
+                </div>
                 <div className="project-details">
-                  <h4>{project.name}</h4>
+                  <h3>{project.name}</h3>
                   <p>{project.copy}</p>
                   <div>
-                    <>React</>
-                    <>TailwindCSS</>
+                    <p>React</p>
+                    <p>TailwindCSS</p>
                   </div>
                   <div>
-                    <>Case study</>
-                    <>Live</>
-                    <>GitHub</>
+                    <a href="/">Case study</a>
+                    <a href="/">Live</a>
+                    <a href="/">GitHub</a>
                   </div>
                 </div>
               </article>
