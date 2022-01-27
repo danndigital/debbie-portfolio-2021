@@ -13,7 +13,7 @@ const Header = () => {
           <button className="header-btn">Get in touch</button>
         </section>
         <div className="header-img-mask mask">
-          <img src="./images/debbie-dann.png" className="header-img" />
+          <img src="./images/debbie-dann.png" className="header-img" alt="debbie dann profile shot"/>
         </div>
       </header>
     );
