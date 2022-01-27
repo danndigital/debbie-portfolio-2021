@@ -61,6 +61,11 @@ a {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.25rem;
+}
+
 p {
   font-family: "DM Sans", sans-serif;
 }
@@ -140,6 +145,14 @@ header {
     background-color: var(--dark-pink);
     border: none;
     padding: 0.75em 2.5em;
+    cursor: pointer;
+}
+
+.header-btn:hover, .header-btn:focus {
+    background-color: var(--medium-pink);
+    color: var(--black);
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -204,7 +217,7 @@ footer {
 }
 
 .skill-icon {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--dark-pink);
 }
 
@@ -221,4 +234,25 @@ footer {
 .skill p {
     font-size: 1.87rem;
 }
+}
+
+/* ========== PROJECTS ========== */
+
+.projects-title {
+    text-align: center;
+    margin: 1em;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
 }
