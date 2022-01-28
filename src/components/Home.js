@@ -10,11 +10,6 @@ const Home = () => {
       <Skills />
       <Projects />
       <Contact />
-      <br />
-      <br />
-      <br />
-      <br />
-
     </main>
   );
 };

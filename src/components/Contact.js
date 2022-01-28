@@ -37,7 +37,7 @@ const Contact = () => {
           If you have a role you would like to discuss or a general enquiry
           please complete the form.
         </p>
-        <div className="social-links">
+        <div className="contact-social">
           <a
             href="https://twitter.com/debbie_digital"
             target="_blank"
@@ -70,7 +70,6 @@ const Contact = () => {
           onSubmit={sendEmail}
           
         >
-          <div>
             <label for="name">
               Name
             </label>
@@ -79,8 +78,6 @@ const Contact = () => {
               name="name"
               id="name"
              />
-          </div>
-          <div className="mb-6">
             <label  for="email">
               Email
             </label>
@@ -89,8 +86,6 @@ const Contact = () => {
               name="email"
               id="email"
             />
-          </div>
-          <div >
             <label  for="message">
               Message
             </label>
@@ -98,14 +93,10 @@ const Contact = () => {
               name="message"
               id="message"
             />
-          </div>
-          <div >
             <input
               type="submit"
               value="Send"
-              
-            />
-          </div>
+              className="form-btn" />
         </form>
       </div>
     </section>

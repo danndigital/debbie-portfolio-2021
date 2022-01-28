@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="dosha" element={<Dosha />} />
           <Route path="notes" element={<Notes />} />
         </Routes>
