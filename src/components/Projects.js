@@ -1,5 +1,6 @@
-const Projects = () => {
+import { Link } from "react-router-dom";
 
+const Projects = () => {
   return (
     <section>
       <h2 className="projects-title">Projects</h2>
@@ -24,7 +25,7 @@ const Projects = () => {
               <p>TailwindCSS</p>
             </div>
             <div className="project-links">
-              <a href="/">Case study</a>
+              <Link to="notes">Case study</Link>
               <a href="https://awesome-lamport-4fcaff.netlify.app/">Live</a>
               <a href="https://github.com/hellodeborahuk/coding-notebook">
                 GitHub
@@ -80,7 +81,7 @@ const Projects = () => {
               <p>TailwindCSS</p>
             </div>
             <div className="project-links">
-              <a href="/">Case study</a>
+              <Link to="dosha">Case study</Link>
               <a href="https://cranky-curran-3d406a.netlify.app/">Live</a>
               <a href="https://github.com/hellodeborahuk/dosha-quiz">GitHub</a>
             </div>

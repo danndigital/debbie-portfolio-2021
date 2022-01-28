@@ -14,9 +14,10 @@
 
 body {
   background-color: var(--cream);
-  background-image: url("../public/images/wave.svg");
+  background-image: url("../public/images/wave.svg"), url("../public/images/wave-contact.svg");
+  background-position: top, bottom;
   background-repeat: no-repeat;
-  background-size: auto 600px;
+  background-size: auto 600px, auto 550px;
   color: var(--black);
 }
 
@@ -132,7 +133,7 @@ header {
 .header-emphasis {
   font-family: "DM Serif Display", serif;
   font-style: italic;
-   width: 90%;
+  width: 90%;
   font-size: 1.125rem;
   margin-top: 1em;
 }
@@ -171,7 +172,8 @@ header {
     align-items: center;
   }
 
-  .header-copy, .header-emphasis {
+  .header-copy,
+  .header-emphasis {
     width: 85%;
   }
   .header-section {
@@ -256,13 +258,14 @@ a:focus {
   align-content: center;
   gap: 1em;
   margin-bottom: 10em;
- 
 }
 
 .project-details {
- display: flex;
- flex-direction: column;
-margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .project-tech {
@@ -291,7 +294,7 @@ margin-bottom: 2em;
 .project-links a:hover {
   color: var(--black);
   background-color: var(--medium-pink);
-   -webkit-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -299,10 +302,12 @@ margin-bottom: 2em;
   position: relative;
   width: 100%;
   height: 100%;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .project-img {
-    position:absolute;
+  position: absolute;
   width: 300px;
   height: 300px;
   border: 10px solid white;
@@ -332,11 +337,17 @@ margin-bottom: 2em;
 /* ========== CONTACT ========== */
 
 .contact-section {
-  background-color: var(--cream);
-  background-image: url("../public/images/wave-contact.svg");
-  background-repeat: no-repeat;
-  background-size: auto 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
+  gap: 1em;
 }
 
+.contact-copy {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.contact-form {
+  flex-grow: 1;
+  flex-basis: 0;
+}

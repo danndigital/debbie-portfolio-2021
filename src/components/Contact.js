@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
-      <div>
+      <div className="contact-copy">
         <h3>Get in touch</h3>
         <p>
           You can find me on Twitter for a chat or LinkedIn for something a bit
@@ -65,7 +65,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div>
+      <div className="contact-form">
         <form
           onSubmit={sendEmail}
           
