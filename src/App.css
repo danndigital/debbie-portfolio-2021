@@ -129,8 +129,12 @@ header {
   order: -1;
 }
 
-.header-title span {
-  display: block;
+.header-emphasis {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+   width: 90%;
+  font-size: 1.125rem;
+  margin-top: 1em;
 }
 
 .header-copy {
@@ -167,7 +171,7 @@ header {
     align-items: center;
   }
 
-  .header-copy {
+  .header-copy, .header-emphasis {
     width: 85%;
   }
   .header-section {
@@ -240,51 +244,27 @@ a:focus {
 }
 
 /* ========== PROJECTS ========== */
-
 .projects-title {
   text-align: center;
   margin: 1em;
 }
 
 .project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: [Image] 1fr;
-  gap: 10px 0px;
-  grid-auto-flow: row;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas: "project-img-container project-details";
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+  margin-bottom: 10em;
+ 
 }
-
-
 
 .project-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "project-title"
-    "project-copy"
-    "project-tech"
-    "project-links";
-  grid-area: project-details;
-  margin-bottom: 2em;
-}
-
-.project-title {
-  grid-area: project-title;
-  
-}
-
-.project-copy {
-  grid-area: project-copy;
+ display: flex;
+ flex-direction: column;
+margin-bottom: 2em;
 }
 
 .project-tech {
-  grid-area: project-tech;
   display: flex;
   gap: 1em;
 }
@@ -297,7 +277,6 @@ a:focus {
 }
 
 .project-links {
-  grid-area: project-links;
   margin-top: 2em;
   display: flex;
   gap: 1em;
@@ -316,8 +295,9 @@ a:focus {
 }
 
 .project-img-container {
-  grid-area: project-img-container;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .project-img {
@@ -326,14 +306,25 @@ a:focus {
   height: 300px;
   border: 10px solid white;
   z-index: 1;
+  margin-bottom: 1em;
 }
 
 .project-img-background {
   width: 300px;
   height: 300px;
   position: absolute;
-  background-color: var(--medium-pink);
   z-index: -1;
   transform: rotate(7deg);
   transform-origin: bottom left;
 }
+
+.mid {
+  background-color: var(--medium-pink);
+}
+.dark {
+  background-color: var(--dark-pink);
+}
+.pale {
+  background-color: var(--pale-pink);
+}
+

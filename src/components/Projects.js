@@ -11,7 +11,7 @@ const Projects = () => {
               alt="Notes App"
               className="project-img"
             />
-            <div className="project-img-background"></div>
+            <div className="project-img-background mid"></div>
           </div>
           <div className="project-details">
             <h3 className="project-title">Notes app</h3>
@@ -40,7 +40,7 @@ const Projects = () => {
               alt="Notes App"
               className="project-img"
             />
-            <div className="project-img-background"></div>
+            <div className="project-img-background dark"></div>
           </div>
           <div className="project-details">
             <h3 className="project-title">Notes app</h3>
@@ -67,7 +67,7 @@ const Projects = () => {
               alt="Dosha quiz"
               className="project-img"
             />
-            <div className="project-img-background"></div>
+            <div className="project-img-background pale"></div>
           </div>
           <div className="project-details">
             <h3 className="project-title">Ayurveda Dosha Quiz</h3>
