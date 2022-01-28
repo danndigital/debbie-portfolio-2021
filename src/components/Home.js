@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import Skills from "./Skills"
 import Projects from "./Projects"
+import Contact from "./Contact"
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Skills />
       <Projects />
+      <Contact />
       <br />
       <br />
       <br />
