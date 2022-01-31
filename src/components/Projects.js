@@ -6,13 +6,12 @@ const Projects = () => {
       <h2 className="projects-title">Projects</h2>
       <div className="projects">
         <article className="project-card">
-          <div className="project-img-container">
+          <div className="project-img-container mid">
             <img
               src="../images/notes.png"
               alt="Notes App"
               className="project-img"
             />
-            <div className="project-img-background mid"></div>
           </div>
           <div className="project-details">
             <h3 className="project-title">Notes app</h3>
@@ -35,13 +34,12 @@ const Projects = () => {
         </article>
 
         <article className="project-card">
-          <div className="project-img-container">
+          <div className="project-img-container yellow">
             <img
               src="../images/yoga-website.png"
               alt="Notes App"
               className="project-img"
             />
-            <div className="project-img-background yellow"></div>
           </div>
           <div className="project-details swap">
             <h3 className="project-title">Yoga Website</h3>
@@ -62,13 +60,12 @@ const Projects = () => {
         </article>
 
         <article className="project-card">
-          <div className="project-img-container">
+          <div className="project-img-container pale">
             <img
               src="../images/dosha.png"
               alt="Dosha quiz"
               className="project-img"
             />
-            <div className="project-img-background pale"></div>
           </div>
           <div className="project-details">
             <h3 className="project-title">Ayurveda Dosha Quiz</h3>
