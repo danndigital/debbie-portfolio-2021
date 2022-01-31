@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-copy">
-        <h3>Get in touch</h3>
+        <h2>Get in touch</h2>
         <p>
           You can find me on Twitter for a chat or LinkedIn for something a bit
           more professional. Come say hello, I’d love to hear from you.

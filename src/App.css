@@ -3,7 +3,7 @@
   --pale-pink: #ffd2ce;
   --medium-pink: #fca9ae;
   --dark-pink: #e4626b;
-  --yellow: #F2CA61;
+  --yellow: #f2ca61;
   --black: #140200;
 }
 
@@ -15,7 +15,8 @@
 
 body {
   background-color: var(--cream);
-  background-image: url("../public/images/wave.svg"), url("../public/images/wave-contact.svg");
+  background-image: url("../public/images/wave.svg"),
+    url("../public/images/wave-contact.svg");
   background-position: top, bottom;
   background-repeat: no-repeat;
   background-size: auto 630px, auto 680px;
@@ -69,7 +70,7 @@ h2 {
 
 h3 {
   font-family: "DM Serif Display", serif;
-  font-size: 1.85rem;
+  font-size: 1.75rem;
 }
 
 p {
@@ -247,7 +248,6 @@ a:focus {
 
 /* ========== PROJECTS ========== */
 
-
 .projects-title {
   text-align: center;
   margin: 2em;
@@ -290,11 +290,12 @@ a:focus {
   text-transform: uppercase;
   border: 2px solid;
   border-image: linear-gradient(
-    150deg,
-    var(--dark-pink),
-    var(--medium-pink),
-    var(--pale-pink)
-  ) 1;  
+      150deg,
+      var(--dark-pink),
+      var(--medium-pink),
+      var(--pale-pink)
+    )
+    1;
   padding: 0.75em 2em;
 }
 
@@ -352,10 +353,10 @@ a:focus {
 }
 
 @media only screen and (min-width: 768px) {
- .project-card {
-   flex-direction: row;
-   margin-bottom: 6em;
- }
+  .project-card {
+    flex-direction: row;
+    margin-bottom: 6em;
+  }
 }
 
 /* ========== ABOUT ========== */
@@ -363,37 +364,40 @@ a:focus {
 .about {
   display: flex;
   flex-direction: column;
-   gap: 1em;
+  gap: 1em;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
 .about-me-copy {
-   width: 90%;
-   margin-bottom: 2em;
+  width: 90%;
 }
 
-
 @media only screen and (min-width: 600px) {
-.about {
-   display: grid;
+  .about {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em 0;
     justify-items: center;
     align-items: center;
-}
+  }
 
-.about-me-copy {
-   width: 85%;
-}
-
+  .about-me-copy {
+    width: 85%;
+  }
 }
 
 /* ========== CONTACT ========== */
 
 .contact-section {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   gap: 1em;
   align-items: center;
 }
@@ -419,8 +423,8 @@ a:focus {
 .contact-social a {
   color: var(--dark-pink);
 }
-.contact-social a:hover, 
-a:focus { 
+.contact-social a:hover,
+a:focus {
   color: var(--medium-pink);
 }
 
@@ -430,21 +434,22 @@ a:focus {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    font-family: "oswald";
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  font-family: "oswald";
 }
 
-input, textarea {
-    padding: 1em 2em;
-    border: none;
+input,
+textarea {
+  padding: 1em 2em;
+  border: none;
 }
 
 .form-btn {
-      margin: 0 auto;
-    width: 150px;
+  margin: 0 auto;
+  width: 150px;
   color: white;
   font-family: Oswald;
   text-transform: uppercase;
@@ -464,15 +469,15 @@ input, textarea {
 }
 
 @media only screen and (min-width: 768px) {
- .contact-section {
-   flex-direction: row;
- }
- 
-.contact-form {
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.contact-copy p {
-  width: 85%;
-}
+  .contact-section {
+    flex-direction: row;
+  }
+
+  .contact-form {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .contact-copy p {
+    width: 85%;
+  }
 }
