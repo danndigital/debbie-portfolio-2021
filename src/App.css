@@ -3,6 +3,7 @@
   --pale-pink: #ffd2ce;
   --medium-pink: #fca9ae;
   --dark-pink: #e4626b;
+  --yellow: #F2CA61;
   --black: #140200;
 }
 
@@ -246,25 +247,37 @@ a:focus {
 
 /* ========== PROJECTS ========== */
 
+
 .projects-title {
   text-align: center;
-  margin: 1em;
+  margin: 2em;
 }
 
 .project-card {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-content: center;
   gap: 1em;
-  margin-bottom: 10em;
+  margin-bottom: 2em;
+}
+
+.swap {
+  order: -1;
 }
 
 .project-details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1em;
   margin-bottom: 2em;
   flex-grow: 1;
   flex-basis: 0;
+}
+
+.project-copy {
+  width: 90%;
 }
 
 .project-tech {
@@ -283,11 +296,9 @@ a:focus {
     var(--pale-pink)
   ) 1;  
   padding: 0.75em 2em;
-  margin-top: 1em;
 }
 
 .project-links {
-  margin-top: 2em;
   display: flex;
   gap: 1em;
 }
@@ -333,18 +344,56 @@ a:focus {
 .mid {
   background-color: var(--medium-pink);
 }
-.dark {
-  background-color: var(--dark-pink);
+.yellow {
+  background-color: var(--yellow);
 }
 .pale {
   background-color: var(--pale-pink);
+}
+
+@media only screen and (min-width: 768px) {
+ .project-card {
+   flex-direction: row;
+   margin-bottom: 6em;
+ }
+}
+
+/* ========== ABOUT ========== */
+
+.about {
+  display: flex;
+  flex-direction: column;
+   gap: 1em;
+  justify-content: center;
+}
+
+
+.about-me-copy {
+   width: 90%;
+   margin-bottom: 2em;
+}
+
+
+@media only screen and (min-width: 600px) {
+.about {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-me-copy {
+   width: 85%;
+}
+
 }
 
 /* ========== CONTACT ========== */
 
 .contact-section {
   display: flex;
-  flex-direction: row;  
+  flex-direction: column;  
   gap: 1em;
   align-items: center;
 }
@@ -355,6 +404,10 @@ a:focus {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.contact-copy p {
+  width: 90%;
 }
 
 .contact-social {
@@ -372,8 +425,8 @@ a:focus {
 }
 
 .contact-form {
-  flex-grow: 1;
-  flex-basis: 0;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 form {
@@ -408,4 +461,18 @@ input, textarea {
   color: var(--black);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 768px) {
+ .contact-section {
+   flex-direction: row;
+ }
+ 
+.contact-form {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.contact-copy p {
+  width: 85%;
+}
 }

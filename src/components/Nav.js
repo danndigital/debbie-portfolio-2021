@@ -10,9 +10,9 @@ const Nav = () => {
       <div className="links">
         <div className="nav-links">
           <Link to="home">Home</Link>
-          <a href="/">Projects</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
+          <a href="#projects">Projects</a>
+          <a href="#about-section">About</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className="social-links">
           <a

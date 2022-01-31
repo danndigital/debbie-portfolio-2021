@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="projects">
         <article className="project-card">
@@ -37,21 +37,21 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container">
             <img
-              src="../images/notes.png"
+              src="../images/yoga-website.png"
               alt="Notes App"
               className="project-img"
             />
-            <div className="project-img-background dark"></div>
+            <div className="project-img-background yellow"></div>
           </div>
-          <div className="project-details">
-            <h3 className="project-title">Notes app</h3>
+          <div className="project-details swap">
+            <h3 className="project-title">Yoga Website</h3>
             <p className="project-copy">
-              A CRUD application to store and edit notes using React and
-              TailwindCSS.
+              A website for my yoga business created with Next.js. The blog
+              posts are in a database using Firestore.
             </p>
             <div className="project-tech">
-              <p>React</p>
-              <p>TailwindCSS</p>
+              <p>Next.js</p>
+              <p>Firebase</p>
             </div>
             <div className="project-links">
               <a href="/">Case study</a>
@@ -72,7 +72,7 @@ const Projects = () => {
           </div>
           <div className="project-details">
             <h3 className="project-title">Ayurveda Dosha Quiz</h3>
-            <p>
+            <p className="project-copy">
               I created a quiz from scratch to implement what I've learnt about
               React.
             </p>

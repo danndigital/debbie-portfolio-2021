@@ -2,6 +2,7 @@ import Header from "./Header";
 import Skills from "./Skills"
 import Projects from "./Projects"
 import Contact from "./Contact"
+import About from "./About"
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Skills />
       <Projects />
+      <About />
       <Contact />
     </main>
   );
