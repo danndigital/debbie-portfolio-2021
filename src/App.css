@@ -51,6 +51,10 @@ a:hover {
   color: var(--dark-pink);
 }
 
+a:visited {
+  color: var(--black);
+}
+
 /* ========== TYPOGRAPHY ========== */
 
 h1 {
@@ -91,9 +95,6 @@ nav {
   text-transform: lowercase;
 }
 
-.nav-title h1 a:hover {
-  color: var(--black);
-}
 
 .nav-links {
   display: none;
