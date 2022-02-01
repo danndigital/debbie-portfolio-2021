@@ -87,6 +87,14 @@ nav {
   margin: 1em;
 }
 
+.nav-title {
+  text-transform: lowercase;
+}
+
+.nav-title h1 a:hover {
+  color: var(--black);
+}
+
 .nav-links {
   display: none;
   align-items: center;

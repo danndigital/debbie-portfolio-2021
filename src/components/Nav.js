@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav>
-      <h1>debbie dann digital</h1>
+      <Link to="/" className="nav-title">
+        <h1>debbie dann digital</h1>
+      </Link>
       <div className="links">
         <div className="nav-links">
-          <Link to="home">Home</Link>
+          <Link to="/">Home</Link>
           <a href="#projects">Projects</a>
           <a href="#about-section">About</a>
           <a href="#contact">Contact</a>
