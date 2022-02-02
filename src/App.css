@@ -104,7 +104,6 @@ nav {
 
 .slider {
   transition: 1s ease;
-  
 }
 
 
@@ -113,6 +112,7 @@ nav {
   flex-direction: row;
   gap: 1em;
   justify-content: center;
+  font-size: 1.175rem;
 }
 
 .menu-icon .menu {
@@ -323,7 +323,7 @@ a:focus {
 
 .projects-title {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .project-card {
@@ -443,6 +443,80 @@ a:focus {
   }
 }
 
+/* ========== FEATURED ========== */
+
+.featured {
+  background-color: var(--pale-pink);
+  text-align: center;
+  margin: 2em 0;
+  padding: 2em 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  
+}
+
+.featured h4 {
+  margin-bottom: -10px;
+}
+
+.featured-video {
+  margin: 1em 0;
+  width: 300px;
+  height: 169px;
+}
+
+@media only screen and (min-width: 500px) {
+  .featured-video {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .featured-video {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .featured {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+
+  .featured-container-holder {
+    max-width: 900px;
+    margin: 2em auto;
+  }
+
+  .featured-container {
+    background: var(--pale-pink);
+    width: 500px;
+    padding: 1em 0;
+  }
+
+  .featured-video {
+    width: 400px;
+    height: 225px;
+  }
+}
+
 /* ========== ABOUT ========== */
 
 .about {
@@ -455,6 +529,7 @@ a:focus {
 
 .about-me-copy {
   width: 90%;
+  margin: 1em 0;
 }
 
 .about-img {
@@ -462,7 +537,38 @@ a:focus {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+.about-img-container {
+  margin: 1em auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  flex-grow: 0;
+  flex-basis: 0;
+  order: 1;
+}
+
+.about-img{
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  z-index: 2;
+  position: relative;
+}
+
+.about-img-container:after{
+  content: "";
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  background-color: var(--yellow);
+  display: block;
+  position: absolute;
+  top: 10px;
+  transform: rotate(7deg);
+}
+
+
+@media only screen and (min-width: 992px) {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -473,6 +579,10 @@ a:focus {
 
   .about-me-copy {
     width: 85%;
+  }
+
+  .about-img-container {
+    order: -1;
   }
 }
 
