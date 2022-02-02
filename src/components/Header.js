@@ -75,11 +75,16 @@ gsap.from(headerBtn, {
           Get in touch
         </button>
       </section>
-      <img
-        src="./images/debbie-dann.png"
-        className="header-img"
-        alt="debbie dann profile shot"
-      />
+      <div className="sparkle-container">
+          <img src="./images/sparkle.svg" className="sparkle one" alt="sparkle shape" />
+          <img src="./images/sparkle.svg" className="sparkle two" alt="sparkle shape" />
+          <img src="./images/sparkle.svg" className="sparkle three" alt="sparkle shape" />
+          <img
+            src="./images/debbie-dann.png"
+            className="header-img"
+            alt="debbie dann profile shot"
+          />
+      </div>
     </header>
   );
 };

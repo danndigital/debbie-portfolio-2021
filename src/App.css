@@ -184,6 +184,7 @@ header {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
+  align-items: center;
 }
 
 .header-section {
@@ -191,7 +192,6 @@ header {
 }
 
 .header-img {
-  order: -1;
   width: 225px;
   margin: 0 auto;
 }
@@ -229,6 +229,51 @@ header {
   transition: all 0.5s ease;
 }
 
+.sparkle-container {
+  position:relative;
+  order: -1;
+}
+.sparkle {
+  display: block;
+  position: absolute;
+  -webkit-animation: bummer 2s;
+  animation: bummer 2s;
+  -webkit-transform: scale(0,0); 
+  transform: scale(0,0);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes bummer {
+  100% {
+      -webkit-transform: scale(1,1); 
+  }
+}
+
+@keyframes bummer {
+  100% {
+      transform: scale(1,1); 
+  }
+}
+
+.sparkle.one {
+  width: 30px;
+  left: 30px;
+  top: 10px;
+}
+
+.sparkle.two {
+  width: 35px;
+  top: 300px;
+  left: 0px;
+}
+
+.sparkle.three {
+  width: 40px;
+  top: 200px;
+  left: 250px;
+}
+
+
 @media only screen and (min-width: 768px) {
   header {
     display: grid;
@@ -245,6 +290,8 @@ header {
   .header-section {
     order: -1;
   }
+
+
 }
 
 /* ========== FOOTER ========== */
@@ -307,7 +354,7 @@ a:focus {
     font-size: 4.5rem;
   }
   .skill p {
-    font-size: 1.65rem;
+    font-size: 1.175rem;
   }
 
   .skills {
@@ -428,7 +475,7 @@ a:focus {
 @media only screen and (min-width: 992px) {
   .project-card {
     flex-direction: row;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
   }
 
   .project-details.swap{
