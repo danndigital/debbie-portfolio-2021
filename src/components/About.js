@@ -5,6 +5,7 @@ const About = () => {
         src="../images/debbie-dann-dark.jpg"
         alt="debbie dann"
         className="about-img"
+        loading="lazy"
       /></div>
       <div className="about-me">
         <h2>Who am I?</h2>

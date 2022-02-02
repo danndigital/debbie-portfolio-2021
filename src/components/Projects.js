@@ -11,6 +11,7 @@ const Projects = () => {
               src="../images/notes.png"
               alt="Notes App"
               className="project-img"
+              loading="lazy"
             />
           </div>
           <div className="project-details">
@@ -39,6 +40,7 @@ const Projects = () => {
               src="../images/yoga-website.png"
               alt="Notes App"
               className="project-img"
+              loading="lazy"
             />
           </div>
           <div className="project-details swap">
@@ -65,6 +67,7 @@ const Projects = () => {
               src="../images/dosha.png"
               alt="Dosha quiz"
               className="project-img"
+              loading="lazy"
             />
           </div>
           <div className="project-details">
