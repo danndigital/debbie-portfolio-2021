@@ -283,6 +283,10 @@ header {
     align-items: center;
   }
 
+  .header-title {
+    font-size: 3rem;
+  }
+
   .header-copy,
   .header-emphasis {
     width: 85%;
@@ -328,7 +332,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 3em 0;
 }
 
@@ -358,7 +362,7 @@ a:focus {
   }
 
   .skills {
-    margin: 5em 0 4em;
+    margin: 6em 0 4em;
   }
 }
 
@@ -413,7 +417,7 @@ a:focus {
       var(--pale-pink)
     )
     1;
-  padding: 0.75em 2em;
+  padding: 0.5em 1.25em;
 }
 
 .project-links {
@@ -422,13 +426,15 @@ a:focus {
 }
 
 .project-links a {
-  padding: 0.75em 2em;
+  padding: 0.5em 1.25em;
   background-color: var(--dark-pink);
+  border: 2px solid var(--dark-pink);
   color: white;
 }
 .project-links a:hover {
   color: var(--black);
   background-color: var(--medium-pink);
+  border: 2px solid var(--medium-pink);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -488,7 +494,16 @@ a:focus {
   .project-details.swap .project-copy{
     text-align: right;
   }
+
+  .project-tech p {
+    padding: 0.75em 2em;
+  }
+
+  .project-links a {
+    padding: 0.75em 2em;
+  }
 }
+
 
 /* ========== FEATURED ========== */
 
