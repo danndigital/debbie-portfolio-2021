@@ -450,13 +450,12 @@ a:focus {
   text-align: center;
   margin: 2em 0;
   padding: 2em 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .featured h4 {
@@ -533,10 +532,6 @@ a:focus {
   margin: 1em 0;
 }
 
-.about-img {
-  width: 225px;
-  margin: 0 auto;
-}
 
 .about-img-container {
   margin: 1em auto;
@@ -554,6 +549,8 @@ a:focus {
   border: 10px solid white;
   z-index: 2;
   position: relative;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about-img-container:after{

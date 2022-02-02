@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id="about-section" className="about">
      <div className="about-img-container"> <img
-        src="https://scontent.flhr10-2.fna.fbcdn.net/v/t1.6435-9/104170622_10101350329912055_2601419511452819018_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RAc8-yF1CR0AX-_iwRM&_nc_ht=scontent.flhr10-2.fna&oh=00_AT9b11jjb9ScDpcslQURdz8u_y0jAeBRfP_sOaAscZgVXw&oe=621FAA56"
+        src="../images/debbie-dann-dark.jpg"
         alt="debbie dann"
         className="about-img"
       /></div>
