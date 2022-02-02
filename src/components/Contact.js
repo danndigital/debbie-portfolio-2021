@@ -3,7 +3,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
-
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -93,10 +92,8 @@ const Contact = () => {
               name="message"
               id="message"
             />
-            <input
-              type="submit"
-              value="Send"
-              className="form-btn" />
+            <button className="form-btn">Submit</button>
+    
         </form>
       </div>
     </section>
