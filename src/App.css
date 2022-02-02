@@ -19,25 +19,22 @@ body {
     url("../public/images/wave-contact.svg");
   background-position: top, bottom;
   background-repeat: no-repeat;
-  background-size: auto 630px, auto 680px;
+  background-size: auto 710px, auto 680px;
   color: var(--black);
 }
 
 .container {
   margin: 1em;
-  max-width: 900px;
 }
 
 @media only screen and (min-width: 600px) {
   .container {
-    width: 90%;
     margin: 2em auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 80%;
     margin: 2em auto;
   }
 }
@@ -102,6 +99,9 @@ nav {
   order: 2;
 }
 
+.social-links a:hover {
+  color: var(--dark-pink);
+}
 .slider {
   transition: 1s ease;
 }
@@ -113,6 +113,10 @@ nav {
   gap: 1em;
   justify-content: center;
   font-size: 1.175rem;
+}
+
+.nav-links a:hover {
+  color: var(--dark-pink);
 }
 
 .menu-icon .menu {
@@ -281,6 +285,8 @@ header {
     gap: 1em 0;
     justify-items: center;
     align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .header-title {
@@ -362,7 +368,8 @@ a:focus {
   }
 
   .skills {
-    margin: 6em 0 4em;
+    max-width: 900px;
+    margin: 6em auto 4em;
   }
 }
 
@@ -370,6 +377,7 @@ a:focus {
 
 #projects{
   margin: 0 auto;
+  max-width: 900px;
 }
 
 .projects-title {
@@ -512,16 +520,12 @@ a:focus {
   text-align: center;
   margin: 2em 0;
   padding: 2em 0;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
 }
 
 .featured h4 {
   margin-bottom: -10px;
+  font-weight: 400;
 }
 
 .featured-video {
@@ -548,18 +552,12 @@ a:focus {
 
 @media only screen and (min-width: 992px) {
   .featured {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    
+    width: 100%;
   }
 
   .featured-container-holder {
@@ -587,6 +585,10 @@ a:focus {
   gap: 1em;
   justify-content: center;
   margin-bottom: 2em;
+}
+
+.about-me h2 {
+  margin-bottom: 0.5em;
 }
 
 .about-me-copy {
@@ -635,6 +637,8 @@ a:focus {
     gap: 1em 0;
     justify-items: center;
     align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .about-me-copy {
@@ -725,6 +729,8 @@ textarea {
   .contact-section {
     flex-direction: row;
     align-items: flex-end;
+    margin: 0 auto;
+    max-width: 900px;
   }
 
   .contact-form {

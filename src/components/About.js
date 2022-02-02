@@ -14,7 +14,7 @@ const About = () => {
           teacher and bake pretty tasty cakes (or at least that’s what people
           tell me).
         </p>
-
+            <br/>
         <p>
           My background is in digital marketing for large businesses. My social
           media knowledge and experience of content creation help me to deliver
