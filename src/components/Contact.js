@@ -93,7 +93,6 @@ const Contact = () => {
               id="message"
             />
             <button className="form-btn">Submit</button>
-    
         </form>
       </div>
     </section>

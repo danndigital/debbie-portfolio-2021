@@ -117,6 +117,10 @@ nav {
     margin: 1em 1em;
   }
 
+  nav h1 {
+    font-size: 2rem;
+  }
+
   .social-links {
     display: none;
   }
