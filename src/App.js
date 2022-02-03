@@ -4,11 +4,15 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Dosha from "./components/Dosha";
 import Notes from "./components/Notes";
+import ScrollToTop from "react-scroll-to-top";
+import ScrollUp from "./components/ScrollUp";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop smooth />
+      <ScrollUp /> 
       <Nav />
       <div className="container">
         <Routes>

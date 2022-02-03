@@ -2,10 +2,12 @@ import { FaLink } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Contact from "./Contact"
 import { Link } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 
 const Dosha = () => {
     return ( 
         <section className="case-study">
+            <ScrollToTop smooth color="var(--black)"/>
             <header className="case-study_header">
                 <h1>Ayurveda Dosha Quiz</h1>
                 <p className="case-study_emphasis">A quiz to tell you your Dosha, created with React.</p>
