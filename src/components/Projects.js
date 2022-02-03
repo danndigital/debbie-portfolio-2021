@@ -18,11 +18,11 @@ const Projects = () => {
             <h3 className="project-title">Notes app</h3>
             <p>
               A CRUD application to store and edit notes using React and
-              TailwindCSS.
+              Tailwind CSS.
             </p>
             <div className="project-tech">
               <p>React</p>
-              <p>TailwindCSS</p>
+              <p>Tailwind CSS</p>
             </div>
             <div className="project-links">
               <Link to="notes">Case study</Link>
@@ -78,7 +78,6 @@ const Projects = () => {
             </p>
             <div className="project-tech">
               <p>React</p>
-              <p>TailwindCSS</p>
             </div>
             <div className="project-links">
               <Link to="dosha">Case study</Link>
