@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Dosha from "./components/Dosha";
+import Yoga from "./components/Yoga"
 import Notes from "./components/Notes";
 import ScrollToTop from "react-scroll-to-top";
 import ScrollUp from "./components/ScrollUp";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="dosha" element={<Dosha />} />
           <Route path="notes" element={<Notes />} />
+          <Route path="yoga" element={<Yoga />} />
         </Routes>
       </div>
       <Footer />

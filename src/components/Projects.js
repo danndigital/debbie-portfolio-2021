@@ -54,7 +54,7 @@ const Projects = () => {
               <p>Firebase</p>
             </div>
             <div className="project-links">
-              <a href="/">Case study</a>
+            <Link to="yoga">Case study</Link>
               <a href="/">Live</a>
               <a href="/">GitHub</a>
             </div>
