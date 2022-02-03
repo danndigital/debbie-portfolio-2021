@@ -73,7 +73,7 @@ const Dosha = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >Github repository</a> for this project.</p>
-                <Link to="/#projects"><button className="header-btn case-study_btn">Back to Projects</button></Link>
+                <Link to="/"><button className="header-btn case-study_btn">Back to Projects</button></Link>
             </article>
             <Contact />
         </section>
