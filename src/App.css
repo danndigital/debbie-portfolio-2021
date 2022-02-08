@@ -19,7 +19,7 @@ body {
     url("../public/images/wave-contact.svg");
   background-position: top, bottom;
   background-repeat: no-repeat;
-  background-size: auto 710px, auto 680px;
+  background-size: auto 725px, auto 680px;
   color: var(--black);
 }
 
@@ -187,8 +187,8 @@ header {
 }
 
 .header-img {
-  width: 225px;
-  height: 301.43px;
+  width: 266px;
+  height: 350px;
   margin: 0 auto;
 }
 
