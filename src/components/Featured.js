@@ -6,7 +6,38 @@ const Featured = () => {
       <div className="featured-container">
             <h4>featured</h4>
             <h2>Case Study</h2>
-            <iframe className="featured-video" src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className="featured-video" 
+            srcdoc="<style>
+            * {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            }
+            body, html {
+              height: 100%;
+            }
+            img, svg {
+              position: absolute;
+              width: 100%;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+            }
+            svg {
+              filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+              transition: all 250ms ease-in-out;
+            }
+            body:hover svg {
+              filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+              transform: scale(1.2);
+            }
+          </style>
+          <a href='https://www.youtube.com/embed/shE4uhX8QIk?autoplay=1'>
+            <img src='https://img.youtube.com/vi/shE4uhX8QIk/hqdefault.jpg' alt='Notes app project video'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+          </a>
+          "
+        src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="Notes app project video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
              </div>
     </div>
