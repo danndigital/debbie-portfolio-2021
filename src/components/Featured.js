@@ -1,7 +1,7 @@
 const Featured = () => {
     return ( 
     <div className="featured">
-                  <div className="featured-container-holder">
+      <div className="featured-container-holder">
 
       <div className="featured-container">
             <h4>featured</h4>
