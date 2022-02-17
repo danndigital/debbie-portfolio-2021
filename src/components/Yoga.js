@@ -10,7 +10,7 @@ const Yoga = () => {
             <ScrollToTop smooth color="var(--black)"/>
             <header className="case-study_header">
                 <h1>Yoga website</h1>
-                <p className="case-study_emphasis">A website for my yoga business created with Next.js and Firestore</p>
+                <p className="case-study_emphasis">A website for my yoga business created with Next.js.</p>
             </header>
             <article className="case-study_container">
                 <div>

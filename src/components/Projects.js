@@ -47,11 +47,10 @@ const Projects = () => {
             <h3 className="project-title">Yoga Website</h3>
             <p className="project-copy">
               A website for my yoga business created with Next.js. The blog
-              posts are in a database using Firestore.
+              posts use markdown.
             </p>
             <div className="project-tech">
               <p>Next.js</p>
-              <p>Firebase</p>
             </div>
             <div className="project-links">
             <Link to="yoga">Case study</Link>
