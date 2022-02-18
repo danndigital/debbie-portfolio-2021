@@ -101,10 +101,6 @@ nav {
 .social-links a:hover {
   color: var(--dark-pink);
 }
-.slider {
-  transition: 1s ease;
-}
-
 
 .nav-links {
   display: flex;
@@ -146,14 +142,15 @@ nav {
     height: 100vh;
     background-color: var(--pale-pink);
     right: -100%;
+    top: 0;
     transition: 1s ease;
+    z-index: 9;
   }
   
   .slider.active {
     top: 0;
     right: 0;
     transition: 1s ease;
-    z-index: 9;
   }
   
   .nav-links {
