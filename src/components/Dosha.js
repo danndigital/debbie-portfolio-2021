@@ -47,10 +47,10 @@ const Dosha = () => {
                         </div>
                     </div>
                 </div>
-                <iframe className="case-study_video" src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="case-study_video" src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
                 <h3>Stumbling blocks</h3>   
                 <p>To get the initial design and questions up was relatively straightforward. Where I got stuck was with trying to count how many of each button had been clicked (a, b or c). Whichever had the most clicks was the answer. I reached out to the community for some guidance and was given some direction which helped me figure out how to do this. I filtered the results array and used the length of the filtered array to count the a, b and c's. To work out which was clicked the most I used if statements.</p>
-                <img src="./images/dosha-quiz-code.png" alt="dosha quiz code block" className="case-study_imgs" loading="lazy" />
+                <img src="/images/dosha-quiz-code.png" alt="dosha quiz code block" className="case-study_imgs" loading="lazy" />
                 <h3>Future improvements</h3>
                 <ul>
                     <li>I want to create a pie chart with results in to show what percentage of each dosha someone is.
@@ -60,7 +60,7 @@ const Dosha = () => {
                     <li>A reset button on the results page to try the quiz again.
                     </li>
                 </ul>
-                <img src="./images/dosha-quiz.png" alt="dosha quiz questions example" className="case-study_imgs" loading="lazy" />
+                <img src="/images/dosha-quiz.png" alt="dosha quiz questions example" className="case-study_imgs" loading="lazy" />
 
                 <p>Try out the <a
             href="https://cranky-curran-3d406a.netlify.app/"
