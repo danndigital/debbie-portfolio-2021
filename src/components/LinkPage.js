@@ -44,7 +44,6 @@ const LinkPage = () => {
           <a
             key={index}
             href={links.url}
-            className="linkpage-links"
           >
             {links.copy}
           </a>

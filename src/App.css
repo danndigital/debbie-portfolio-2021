@@ -865,11 +865,11 @@ display: block;
 
 .linkpage-section {
   max-width: 300px;
-  margin: 1em auto 3em;
+  margin: 1em auto;
   text-align: center;
 }
 
-.linkpage-links {
+.linkpage-section a, .linkpage-section a:visited {
   display: block;
   margin: 1em 0;
   padding: 0.5em 1.25em;
@@ -878,7 +878,7 @@ display: block;
   color: white;
 }
 
-.linkpage-links:hover {
+.linkpage-section a:hover {
   color: var(--black);
   background-color: var(--medium-pink);
   border: 2px solid var(--medium-pink);
@@ -887,6 +887,6 @@ display: block;
 }
 
 .linkpage-image {
-  height: 250px;
-  width: 190px;
+  height: 200px;
+  width: 152px;
 }
