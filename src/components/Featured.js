@@ -7,7 +7,7 @@ const Featured = () => {
             <h4>featured</h4>
             <h2>Case Study</h2>
             <iframe className="featured-video" 
-            srcdoc="<style>
+            srcDoc="<style>
             * {
             padding: 0;
             margin: 0;
@@ -37,7 +37,7 @@ const Featured = () => {
             <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
           </a>
           "
-        src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="Notes app project video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="Notes app project video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy"/>
             </div>
              </div>
     </div>
