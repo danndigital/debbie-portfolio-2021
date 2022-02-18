@@ -7,14 +7,14 @@ import Featured from "./Featured"
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Header />
       <Skills />
       <Projects />
       <Featured />
       <About />
       <Contact />
-    </main>
+    </>
   );
 };
 
