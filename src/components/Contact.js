@@ -69,7 +69,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           
         >
-            <label for="name">
+            <label htmlFor="name">
               Name
             </label>
             <input
@@ -77,7 +77,7 @@ const Contact = () => {
               name="name"
               id="name"
              />
-            <label  for="email">
+            <label htmlFor="email">
               Email
             </label>
             <input
@@ -85,7 +85,7 @@ const Contact = () => {
               name="email"
               id="email"
             />
-            <label  for="message">
+            <label htmlFor="message">
               Message
             </label>
             <textarea

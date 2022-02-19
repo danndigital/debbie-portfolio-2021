@@ -35,7 +35,7 @@ const LinkPage = () => {
     return ( 
         <section className="linkpage-section">
           <img
-            src="./images/debbie-dann-hero-compressed.png"
+            src="/images/debbie-dann-hero-compressed.png"
             className="linkpage-image header-img"
             alt="debbie dann profile shot"
           />

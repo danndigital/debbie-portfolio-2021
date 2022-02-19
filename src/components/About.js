@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id="about-section" className="about">
      <div className="about-img-container"> <img
-        src="../images/debbie-dann-dark.jpg"
+        src="/images/debbie-dann-dark.jpg"
         alt="debbie dann"
         className="about-img"
         loading="lazy"

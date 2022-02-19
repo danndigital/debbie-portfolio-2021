@@ -8,7 +8,7 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container mid">
             <img
-              src="../images/notes.png"
+              src="/images/notes.png"
               alt="Notes App"
               className="project-img"
               loading="lazy"
@@ -37,7 +37,7 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container yellow">
             <img
-              src="../images/yoga-website.png"
+              src="/images/yoga-website.png"
               alt="Notes App"
               className="project-img"
               loading="lazy"
@@ -63,7 +63,7 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container pale">
             <img
-              src="../images/dosha.png"
+              src="/images/dosha.png"
               alt="Dosha quiz"
               className="project-img"
               loading="lazy"
