@@ -37,25 +37,24 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container yellow">
             <img
-              src="/images/yoga-website.webp"
-              alt="Notes App"
+              src="/images/buzzphonics.png"
+              alt="buzzphonics"
               className="project-img"
               loading="lazy"
             />
           </div>
           <div className="project-details swap">
-            <h3 className="project-title">Yoga Website</h3>
+            <h3 className="project-title">buzzphonics</h3>
             <p className="project-copy">
-              A website for my yoga business created with Next.js. The blog
-              posts use markdown.
+            Buzzphonics is a sounds app for parents and kids to learn Phase 2 and Phase 3 phonics in the UK.
             </p>
             <div className="project-tech">
-              <p>Next.js</p>
+              <p>React</p>
             </div>
             <div className="project-links">
-            <Link to="yoga">Case study</Link>
-              <a href="/">Live</a>
-              <a href="/">GitHub</a>
+            <Link to="buzzphonics">Case study</Link>
+              <a href="https://focused-swirles-0bc3a1.netlify.app/">Live</a>
+              <a href="https://github.com/hellodeborahuk/buzzphonics">GitHub</a>
             </div>
           </div>
         </article>
@@ -63,25 +62,24 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container pale">
             <img
-              src="/images/dosha.png"
-              alt="Dosha quiz"
+              src="/images/yoga-website.webp"
+              alt="Yoga website"
               className="project-img"
               loading="lazy"
             />
           </div>
           <div className="project-details">
-            <h3 className="project-title">Ayurveda Dosha Quiz</h3>
+            <h3 className="project-title">Yoga website</h3>
             <p className="project-copy">
-              I created a quiz from scratch to implement what I've learnt about
-              React.
+            A website for my yoga business created with Next.js. It has a markdown blog using gray-matter and marked.
             </p>
             <div className="project-tech">
-              <p>React</p>
+              <p>Next.js</p>
             </div>
             <div className="project-links">
-              <Link to="dosha">Case study</Link>
-              <a href="https://cranky-curran-3d406a.netlify.app/">Live</a>
-              <a href="https://github.com/hellodeborahuk/dosha-quiz">GitHub</a>
+              <Link to="yoga">Case study</Link>
+              <a href="https://relaxed-noether-4fba77.netlify.app/">Live</a>
+              <a href="https://github.com/hellodeborahuk/yoga-site">GitHub</a>
             </div>
           </div>
         </article>
