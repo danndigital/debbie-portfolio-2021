@@ -198,8 +198,8 @@ header {
 }
 
 .header-img {
-  width: 332px;
-  height: 350px;
+  width: 285px;
+  height: 300px;
   margin: 0 auto;
 }
 
@@ -288,8 +288,12 @@ header {
     gap: 1em 0;
     justify-items: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
+  }
+  .header-img {
+    width: 332px;
+    height: 350px;
   }
 
   .header-title {
@@ -303,8 +307,12 @@ header {
   .header-section {
     order: -1;
   }
+}
 
-
+@media only screen and (min-width: 992px) {
+ header {
+  max-width: 900px;
+ }
 }
 
 /* ========== FOOTER ========== */
@@ -373,16 +381,21 @@ a:focus {
   }
 
   .skills {
-    max-width: 900px;
+    max-width: 700px;
     margin: 6em auto 4em;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .skills {
+   max-width: 900px;
+  }
+ }
 
 /* ========== PROJECTS ========== */
 
 #projects{
   margin: 0 auto;
-  max-width: 900px;
 }
 
 .projects-title {
@@ -491,7 +504,18 @@ a:focus {
   background-color: var(--pale-pink);
 }
 
+@media only screen and (min-width: 768px) {
+  .projects {
+   max-width: 700px;
+   margin: 0 auto;
+  }
+ }
+
 @media only screen and (min-width: 992px) {
+  .projects {
+    max-width: 900px;
+    margin: 0 auto;
+   }
   .project-card {
     flex-direction: row;
     margin-bottom: 4em;
@@ -634,6 +658,12 @@ a:focus {
   transform: rotate(7deg);
 }
 
+@media only screen and (min-width: 768px) {
+ .about {
+   max-width: 700px;
+   margin: 0 auto;
+  }
+ }
 
 @media only screen and (min-width: 992px) {
   .about {
@@ -736,7 +766,7 @@ textarea {
     flex-direction: row;
     align-items: flex-end;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 700px;
   }
 
   .contact-form {
@@ -747,6 +777,12 @@ textarea {
     width: 85%;
   }
 }
+@media only screen and (min-width: 992) {
+  .about {
+    max-width: 900px;
+    margin: 0 auto;
+   }
+  }
 
 /* ========== CASE STUDY ========== */
 
