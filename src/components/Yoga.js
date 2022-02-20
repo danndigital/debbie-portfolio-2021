@@ -46,7 +46,6 @@ const Yoga = () => {
                         </div>
                     </div>
                 </div>
-                <iframe className="case-study_video" src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
                 <h3>Stumbling blocks</h3>   
                 <p>The biggest issue here was replicating the blog posts that were so easy to do in WordPress. I didn't want a full CMS system so I started with a data.JSON file with the blog information and first paragraph. I choose Firebase to experiment with it, and it was really simple to get the database setup. However I couldn't figure out how to store multiple paragraphs of data. 
                 </p>

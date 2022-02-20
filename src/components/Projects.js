@@ -37,7 +37,7 @@ const Projects = () => {
         <article className="project-card">
           <div className="project-img-container yellow">
             <img
-              src="/images/yoga-website.png"
+              src="/images/yoga-website.webp"
               alt="Notes App"
               className="project-img"
               loading="lazy"
