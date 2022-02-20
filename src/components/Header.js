@@ -80,7 +80,7 @@ gsap.from(headerBtn, {
           <img src="/images/sparkle.svg" className="sparkle two" alt="sparkle shape" />
           <img src="/images/sparkle.svg" className="sparkle three" alt="sparkle shape" />
           <img
-            src="/images/debbie-dann-hero-compressed.png"
+            src="/images/debbie-dann-compressed.png"
             className="header-img"
             alt="debbie dann profile shot"
           />

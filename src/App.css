@@ -199,7 +199,7 @@ header {
 }
 
 .header-img {
-  width: 266px;
+  width: 332px;
   height: 350px;
   margin: 0 auto;
 }
@@ -264,21 +264,21 @@ header {
 }
 
 .sparkle.one {
-  width: 30px;
-  left: 30px;
-  top: 10px;
+  width: 35px;
+  left: 50px;
+  top: 0px;
 }
 
 .sparkle.two {
   width: 35px;
   top: 300px;
-  left: 0px;
+  left: 30px;
 }
 
 .sparkle.three {
   width: 40px;
-  top: 200px;
-  left: 250px;
+  top: 220px;
+  left: 260px;
 }
 
 
@@ -885,5 +885,5 @@ display: block;
 
 .linkpage-image {
   height: 200px;
-  width: 152px;
+  width: 190px;
 }
