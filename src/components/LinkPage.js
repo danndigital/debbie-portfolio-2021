@@ -36,7 +36,12 @@ const LinkPage = () => {
         <section className="linkpage-section">
          <img
             src="/images/debbie-dann-compressed.png"
-            className="linkpage-image header-img"
+            className="linkpage-image header-img desktop-img"
+            alt="debbie dann profile shot"
+          />
+          <img
+            src="/images/debbie-dann-compressed.webp"
+            className="linkpage-image header-img mobile-img"
             alt="debbie dann profile shot"
           />
             {links.map(function(links, index) {
