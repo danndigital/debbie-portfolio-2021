@@ -802,6 +802,8 @@ li {
   max-width: 900px;
   margin: 0 auto;
 }
+
+
 .case-study_container {
   margin: 2em 2em;
 }
@@ -816,7 +818,7 @@ li {
   margin: 1em;  
 }
 
-.case-study h3, h4, ul {
+.case-study h3, h4, ul, p {
   margin-bottom: 1em;
 }
 

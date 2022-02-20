@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 import Home from "./components/Home"
-import Dosha from "./components/Dosha";
+import Buzzphonics from "./components/Buzzphonics";
 import Yoga from "./components/Yoga"
 import Notes from "./components/Notes";
 import LinkPage from "./components/LinkPage"
@@ -19,7 +19,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="dosha" element={<Dosha />} />
+          <Route path="buzzphonics" element={<Buzzphonics />} />
           <Route path="notes" element={<Notes />} />
           <Route path="yoga" element={<Yoga />} />
           <Route path="linkpage" element={<LinkPage />} />

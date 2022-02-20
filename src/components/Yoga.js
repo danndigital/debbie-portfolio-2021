@@ -49,7 +49,6 @@ const Yoga = () => {
                 <h3>Stumbling blocks</h3>   
                 <p>The biggest issue here was replicating the blog posts that were so easy to do in WordPress. I didn't want a full CMS system so I started with a data.JSON file with the blog information and first paragraph. I choose Firebase to experiment with it, and it was really simple to get the database setup. However I couldn't figure out how to store multiple paragraphs of data. 
                 </p>
-                <br/>
                <img src="/images/yoga-website-blog.gif" alt="yoga website blog gif" className="case-study_imgs" loading="lazy" />
                 <h3>Future improvements</h3>
                 <ul>
