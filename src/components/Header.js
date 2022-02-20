@@ -79,16 +79,18 @@ gsap.from(headerBtn, {
           <img src="/images/sparkle.svg" className="sparkle one" alt="sparkle shape" />
           <img src="/images/sparkle.svg" className="sparkle two" alt="sparkle shape" />
           <img src="/images/sparkle.svg" className="sparkle three" alt="sparkle shape" />
-            <img
-              src="/images/debbie-dann-compressed.png"
-              className="header-img desktop-img"
-              alt="debbie dann profile shot"
+          <picture>
+            <source 
+                media="(min-width: 650px)"
+                srcset="./images/debbie-dann-compressed.png" />
+            <source 
+                media="(max-width: 650px)"
+                srcset="./images/debbie-dann-compressed.webp" />
+            <img src="./images/debbie-dann-compressed.png" 
+            alt="debbie dann profile" 
+            className="header-img"
             />
-             <img
-            src="/images/debbie-dann-compressed.webp"
-            className="header-img mobile-img"
-            alt="debbie dann profile shot"
-          />
+          </picture>
       </div>
     </header>
   );
