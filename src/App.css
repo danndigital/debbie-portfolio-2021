@@ -47,7 +47,7 @@ a:hover {
   color: var(--dark-pink);
 }
 
-a:visited {
+a:visited, a:active {
   color: var(--black);
 }
 
@@ -101,7 +101,6 @@ nav {
 .social-links a:hover {
   color: var(--dark-pink);
 }
-
 .nav-links {
   display: flex;
   flex-direction: row;
