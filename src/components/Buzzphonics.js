@@ -31,7 +31,7 @@ const Buzzphonics = () => {
                             <h4>Links</h4>
                             <div className="case-study_links">
           <a
-            href="https://focused-swirles-0bc3a1.netlify.app/"
+            href="https://www.buzzphonics.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link"
@@ -82,7 +82,7 @@ const Buzzphonics = () => {
                 </ul>
 
                 <p>Try out <a
-            href="https://focused-swirles-0bc3a1.netlify.app/"
+            href="https://www.buzzphonics.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link"

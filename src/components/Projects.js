@@ -53,7 +53,7 @@ const Projects = () => {
             </div>
             <div className="project-links">
             <Link to="buzzphonics">Case study</Link>
-              <a href="https://focused-swirles-0bc3a1.netlify.app/">Live</a>
+              <a href="https://www.buzzphonics.com/">Live</a>
               <a href="https://github.com/hellodeborahuk/buzzphonics">GitHub</a>
             </div>
           </div>
