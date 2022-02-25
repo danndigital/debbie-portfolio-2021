@@ -50,7 +50,7 @@ const Buzzphonics = () => {
                         </div>
                     </div>
                 </div>
-                <iframe className="case-study_video" src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+                <iframe className="case-study_video" src="https://www.youtube.com/embed/5VhLXd-hO9E?controls=0" title="Buzzphonics app video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
                 <h3>Requirements</h3>   
                 <p>The requirements for the basic design was to have a Phase 2 and Phase 3 page with all the sounds. Then my daughter got involved and wanted some icons and games. She wanted to be able to use the app for learning and how could I say no to that?!</p>
                 <h3>Implementation</h3>
@@ -64,6 +64,8 @@ const Buzzphonics = () => {
                 <p>I decided last minute to add one more game, as my daughter kept asking me for one. This is a spelling game and more complex than the other two games. I started by writing pseudo code to see how the game would be laid out and how I would store the data. I created a cardDeck array that held the words, sounds and images. I then setup the desk by shuffling the sounds of the word and adding 3 random sounds, that weren't in the original word.</p>
                 <img src="./images/buzzphonics-code4.png" alt="buzzphonics code example" className="case-study_imgs" loading="lazy"/>
                 <p>At this point I took a break and designed a name and logo for the app. I also added another game, a reading game, based on the quiz. It's good to mix things up a bit.</p>
+                <img src="./images/buzzphonics-spelling-game.jpg" alt="buzzphonics spelling game" className="case-study_imgs" loading="lazy"/>
+                <p>For the final part of the game, I asked for help. I knew what I wanted the game to do but I couldn't figure out how it should happen. The letters needed to be clicked in the correct order and displayed. It was interesting to learn how the game worked and when we merged in the branch, it had conflicts I needed to resolve. I've not seen that before so it was a good thing to learn!</p>
                 <h3>What did I learn?</h3>
                 <p>I have made a few React projects in the past but even though the site is quite simple there were a few things that got me googling.</p>
                 <ul>

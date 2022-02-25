@@ -32,12 +32,12 @@ const Featured = () => {
               transform: scale(1.2);
             }
           </style>
-          <a href='https://www.youtube.com/embed/shE4uhX8QIk?autoplay=1'>
-            <img src='./images/notes-app-thumbnail.png' alt='Notes app project video'>
+          <a href='https://www.youtube.com/embed/5VhLXd-hO9E?autoplay=1'>
+            <img src='./images/buzzphonics-youtube-thumbnail.png' alt='buzzphonics app project video'>
             <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
           </a>
           "
-        src="https://www.youtube.com/embed/shE4uhX8QIk?controls=0" title="Notes app project video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy"/>
+        src="https://www.youtube.com/embed/5VhLXd-hO9E?controls=0" title="Buzzphonics app project video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy"/>
             </div>
              </div>
     </div>
