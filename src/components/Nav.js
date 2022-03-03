@@ -6,14 +6,9 @@ import {MdClose} from "react-icons/md"
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
-
 const Nav = () => {
   const [active, setActive] = useState(false)
-
-  const showMenu = () => {
-    setActive(!active)
-  }
-
+  const showMenu = () => setActive(!active);
 
   return (
     <nav>
