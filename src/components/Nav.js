@@ -5,11 +5,17 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import {MdClose} from "react-icons/md"
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const pathname  = useLocation();
   const [active, setActive] = useState(false)
   const showMenu = () => setActive(!active);
+
+  useEffect(() => {
+    setActive(false);
+  }, [pathname]);
 
   return (
     <nav>
