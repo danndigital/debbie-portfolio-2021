@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import { genericHashLink } from 'react-router-hash-link';
+import {genericHashLink} from 'react-router-hash-link';
 
 const LinkButton = (props) => {
   const {
@@ -18,11 +18,11 @@ const LinkButton = (props) => {
 
   const clickHandler = onClick ? onClick : (e) => {
     e.preventDefault();
-    navigate(to, { replace: true });
+    navigate(to, {replace: true});
   }
 
   return (
-    <button {...rest} ref={forwardedRef} onClick={clickHandler} />
+    <button {...rest} ref={forwardedRef} onClick={clickHandler}/>
   )
 }
 
