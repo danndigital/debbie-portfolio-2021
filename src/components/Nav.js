@@ -4,16 +4,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi"
 import {MdClose} from "react-icons/md"
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import {useState} from "react";
-
 
 const Nav = () => {
   const [active, setActive] = useState(false)
-
-  const showMenu = () => {
-    setActive(!active)
-  }
-
+  const showMenu = () => setActive(!active);
 
   return (
     <nav>
@@ -53,9 +49,9 @@ const Nav = () => {
             <div className="nav-links">
               <div className="closed"><MdClose className="close" onClick={showMenu} /></div>
               <Link to="/">Home</Link>
-              <a href="#projects">Projects</a>
-              <a href="#about-section">About</a>
-              <a href="#contact">Contact</a>
+              <HashLink to="/#projects">Projects</HashLink>
+              <HashLink to="/#about-section">About</HashLink>
+              <HashLink to="/#contact">Contact</HashLink>
             </div>
          </div>
     </nav>
