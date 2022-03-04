@@ -82,10 +82,10 @@ gsap.from(headerBtn, {
           <picture>
             <source 
                 media="(min-width: 650px)"
-                srcset="./images/debbie-dann-compressed.png" />
+                srcSet="./images/debbie-dann-compressed.png" />
             <source 
                 media="(max-width: 650px)"
-                srcset="./images/debbie-dann-compressed.webp" />
+                srcSet="./images/debbie-dann-compressed.webp" />
             <img src="./images/debbie-dann-compressed.png" 
             alt="debbie dann profile" 
             className="header-img"
