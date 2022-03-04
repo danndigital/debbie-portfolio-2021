@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { gsap, Power3 } from "gsap";
+import {HashLinkButton} from "./LinkButton";
 
 const Header = () => {
   let headerSection = useRef(null)
@@ -66,14 +67,13 @@ gsap.from(headerBtn, {
           My social media knowledge and experience of content creation help me
           to deliver beautiful websites with JavaScript, React and TailwindCSS.
         </p>
-        <button
-          ref={(el) => {
-            headerBtn = el;
-          }}
+        <HashLinkButton
+          to="#contact"
+          forwardedRef={(el) => {headerBtn = el}}
           className="header-btn"
         >
           Get in touch
-        </button>
+        </HashLinkButton>
       </section>
       <div className="sparkle-container">
           <img src="/images/sparkle.svg" className="sparkle one" alt="sparkle shape" />
