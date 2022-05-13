@@ -82,7 +82,7 @@ I followed a <a className="case-study_a" href="https://www.youtube.com/watch?v=8
             rel="noopener noreferrer"
             aria-label="Link"
           >Notes App</a> or visit the  <a
-          href="https://github.com/hellodeborahuk/dosha-quiz"
+          href="https://github.com/hellodeborahuk/coding-notebook"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
