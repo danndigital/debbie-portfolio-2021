@@ -786,7 +786,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 992) {
-  .about {
+  .contact-section {
     max-width: 900px;
     margin: 0 auto;
    }
