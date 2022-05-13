@@ -11,7 +11,7 @@ const LinkPage = () => {
 
     const links = [
         {
-          url: "https://dann.digital/",
+          url: "https://www.debbiedanndigital.com/",
           copy: "Check out my portfolio",
         },
         {
