@@ -488,6 +488,7 @@ a:focus {
   border: 10px solid white;
   z-index: 2;
   position: relative;
+  top: 0;
 }
 
 .project-img-container:after{
