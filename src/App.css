@@ -475,7 +475,7 @@ a:focus {
 
 .project-img-container {
   margin: 0 auto;
-  position: relative;
+  /*position: relative;*/
   width: 300px;
   height: 300px;
   flex-grow: 0;
@@ -487,21 +487,21 @@ a:focus {
   height: 300px;
   border: 10px solid white;
   z-index: 2;
-  position: relative;
-  top: 0;
+  /*position: relative;*/
+  /*top: 0;*/
 }
 
-.project-img-container:after{
-  content: "";
-  width: 300px;
-  height: 300px;
-  z-index: 1;
-  background-color: black;
-  display: block;
-  position: absolute;
-  top: 10px;
-  transform: rotate(7deg);
-}
+/*.project-img-container:after{*/
+/*  content: "";*/
+/*  width: 300px;*/
+/*  height: 300px;*/
+/*  z-index: 1;*/
+/*  background-color: black;*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  top: 10px;*/
+/*  transform: rotate(7deg);*/
+/*}*/
 
 .project-img-container.mid:after {
   background-color: var(--medium-pink);
