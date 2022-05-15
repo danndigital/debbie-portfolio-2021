@@ -616,19 +616,12 @@ a:focus {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
-  margin-bottom: 2em;
   margin: 0 2em;
 }
 
 .about-me h2 {
   margin-bottom: 0.5em;
 }
-
-.about-me-copy {
-  width: 90%;
-  margin: 1em 0;
-}
-
 
 .about-img-container {
   margin: 1em auto;
@@ -677,10 +670,6 @@ a:focus {
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
-  }
-
-  .about-me-copy {
-    width: 85%;
   }
 
   .about-img-container {
