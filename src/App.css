@@ -427,7 +427,6 @@ a:focus {
   gap: 1em;
   margin-bottom: 2em;
   flex-grow: 1;
-  flex-basis: 0;
   margin-left: 2rem;
 }
 
@@ -452,6 +451,7 @@ a:focus {
     )
     1;
   padding: 0.5em 1.25em;
+  margin: 0;
 }
 
 .project-links {
@@ -476,8 +476,6 @@ a:focus {
 .project-img-container {
   margin: 0 auto;
   position: relative;
-  width: 300px;
-  height: 300px;
   flex-grow: 0;
   flex-basis: 0;
 }
@@ -486,20 +484,18 @@ a:focus {
   width: 300px;
   height: 300px;
   border: 10px solid white;
-  z-index: 2;
-  position: relative;
 }
 
 .project-img-container:after{
   content: "";
   width: 300px;
   height: 300px;
-  z-index: 1;
   background-color: black;
   display: block;
   position: absolute;
   top: 10px;
   transform: rotate(7deg);
+  z-index: -1;
 }
 
 .project-img-container.mid:after {
@@ -620,19 +616,12 @@ a:focus {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
-  margin-bottom: 2em;
   margin: 0 2em;
 }
 
 .about-me h2 {
   margin-bottom: 0.5em;
 }
-
-.about-me-copy {
-  width: 90%;
-  margin: 1em 0;
-}
-
 
 .about-img-container {
   margin: 1em auto;
@@ -675,17 +664,12 @@ a:focus {
 
 @media only screen and (min-width: 992px) {
   .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    flex-direction: row;
+    gap: 3em;
     justify-items: start;
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
-  }
-
-  .about-me-copy {
-    width: 85%;
   }
 
   .about-img-container {
