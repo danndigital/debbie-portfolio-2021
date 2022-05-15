@@ -671,9 +671,8 @@ a:focus {
 
 @media only screen and (min-width: 992px) {
   .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    flex-direction: row;
+    gap: 3em;
     justify-items: start;
     align-items: center;
     max-width: 900px;
