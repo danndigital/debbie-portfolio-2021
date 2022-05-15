@@ -427,7 +427,6 @@ a:focus {
   gap: 1em;
   margin-bottom: 2em;
   flex-grow: 1;
-  flex-basis: 0;
   margin-left: 2rem;
 }
 
