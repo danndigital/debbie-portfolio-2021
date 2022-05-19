@@ -1,8 +1,41 @@
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+})
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
+const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact-form", ...formData })
+  })
+  .then(() => alert("Success!"))
+  .then(() => setFormData({name: "", email: "",  message: ""}))
+  .catch(error => alert(error));
+
+  e.preventDefault();
+}
+
+const handleChange = e => {
+  const { name, value } = e.target
+  setFormData({
+      ...formData, 
+      [name]: value
+  })
+}
 
   return (
     <section id="contact" className="contact-section">
@@ -43,25 +76,42 @@ const Contact = () => {
           </a>
         </div>
       </div>
+
       <div className="contact-form">
-      <form name="contact" method="post">
-              <input type="hidden" name="form-name" value="contact" />
-              <p>
-                <label htmlFor="name">Name</label> <br />
-                <input type="text" id="name" name="name" required />
-              </p>
-              <p>
-                <label htmlFor="email">Email</label> <br />
-                <input type="email" id="email" name="email" required />
-              </p>
-              <p>
-                <label htmlFor="message">Message</label> <br />
-                <textarea id="message" name="message" required></textarea>
-              </p>
-              <p>
-                <input type="submit" value="Submit message"><button className="form-btn">Submit</button></input>
-              </p>
-            </form>
+          <form
+          onSubmit={handleSubmit}
+          name="contact-form" netlify netlify-honeypot="bot-field" hidden
+        >
+          <label htmlFor="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            required
+            type="text"
+            value={formData.name} 
+            onChange={handleChange}
+          /> 
+          <label htmlFor="email">E-mail Address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            value={formData.email} 
+            onChange={handleChange}
+          /> 
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            value={formData.message} 
+            onChange={handleChange}
+            />
+          <button type="submit" className="form-btn">
+            Submit
+          </button>
+        </form>
       </div>
     </section>
   );
