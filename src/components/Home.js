@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./Header"
 import Skills from "./Skills"
 import Projects from "./Projects"
 import Contact from "./Contact"
