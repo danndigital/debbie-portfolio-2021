@@ -79,6 +79,7 @@ const handleChange = e => {
 
       <div className="contact-form">
           <form id="mainContactForm" onSubmit={handleSubmit} name="contact-form">
+          <input type="hidden" name="form-name" value="contact-form" />
           <label htmlFor="name">Name</label>
           <input
             id="name"
