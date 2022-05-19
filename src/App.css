@@ -718,7 +718,7 @@ a:focus {
   margin: 2em;
 }
 
-form {
+form#mainContactForm {
   display: flex;
   flex-direction: column;
   gap: 1em;

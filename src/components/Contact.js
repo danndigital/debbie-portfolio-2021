@@ -78,10 +78,7 @@ const handleChange = e => {
       </div>
 
       <div className="contact-form">
-          <form
-          onSubmit={handleSubmit}
-          name="contact-form" netlify netlify-honeypot="bot-field" hidden
-        >
+          <form id="mainContactForm" onSubmit={handleSubmit} name="contact-form">
           <label htmlFor="name">Name</label>
           <input
             id="name"
