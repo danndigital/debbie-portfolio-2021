@@ -140,7 +140,7 @@ console.log(errors, formData)
             onChange={handleChange}
             />
             {errors.message && <p>{errors.message}</p>}
-          <button type="submit">
+          <button type="submit" className="form-btn">
             Submit
           </button>
         </form>
