@@ -1,7 +1,7 @@
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,57 +16,25 @@ const encode = (data) => {
       .join("&");
 }
 
-const handleChange = e => {
-    const { name, value } = e.target
-    setFormData({
-        ...formData, 
-        [name]: value
-    })
-}
-
-
-const [errors, setErrors] = useState({})
-const validate = (formData) => {
-    let formErrors = {}
-    if(!formData.name){
-        formErrors.name = "Name required"
-    }
-    if(!formData.email){
-        formErrors.email = "Email required"
-    } 
-    if(!formData.message){
-        formErrors.message = "Message is required"
-    }
-    return formErrors
-}
-
-const [isSubmitted, setIsSubmitted] = useState(false)
-
 const handleSubmit = e => {
-    setErrors(validate(formData))
-    setIsSubmitted(true)
-    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact-form", ...formData })
+  })
+  .then(() => alert("Success!"))
+  .catch(error => alert(error));
 
+  e.preventDefault();
 }
 
-
-
-useEffect(() => {
-    if(Object.keys(errors).length === 0 && isSubmitted){
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-form", ...formData })
-        })
-        .then(() => alert("Success!"))
-        .then(() => setIsSubmitted(false))
-        .then(() => setFormData({name: "", email: "",  message: ""}))
-        .catch(error => alert(error))
-    }
-}, [errors, formData, isSubmitted])
-
-console.log(errors, formData)
+const handleChange = e => {
+  const { name, value } = e.target
+  setFormData({
+      ...formData, 
+      [name]: value
+  })
+}
 
   return (
     <section id="contact" className="contact-section">
@@ -121,7 +89,7 @@ console.log(errors, formData)
             type="text"
             value={formData.name} 
             onChange={handleChange}
-          /> {errors.name && <p>{errors.name}</p>} 
+          /> 
           <label htmlFor="email">E-mail Address</label>
           <input
             id="email"
@@ -130,7 +98,7 @@ console.log(errors, formData)
             required
             value={formData.email} 
             onChange={handleChange}
-          /> {errors.email && <p>{errors.email}</p>} 
+          /> 
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -139,7 +107,6 @@ console.log(errors, formData)
             value={formData.message} 
             onChange={handleChange}
             />
-            {errors.message && <p>{errors.message}</p>}
           <button type="submit" className="form-btn">
             Submit
           </button>
