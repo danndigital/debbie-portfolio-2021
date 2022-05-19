@@ -23,6 +23,7 @@ const handleSubmit = e => {
       body: encode({ "form-name": "contact-form", ...formData })
   })
   .then(() => alert("Success!"))
+  .then(() => setFormData({name: "", email: "",  message: ""}))
   .catch(error => alert(error));
 
   e.preventDefault();
