@@ -7,8 +7,9 @@ import Yoga from "./components/Yoga"
 import Notes from "./components/Notes";
 import LinkPage from "./components/LinkPage"
 import ScrollToTop from "react-scroll-to-top";
-import ScrollUp from "./components/ScrollUp";
+import ScrollUp from "./components/ScrollUp"; 
 import "./App.css";
+import ErrorPage from "./components/404";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="notes" element={<Notes />} />
           <Route path="yoga" element={<Yoga />} />
           <Route path="linkpage" element={<LinkPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         </main>
       <Footer />

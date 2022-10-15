@@ -917,3 +917,49 @@ display: block;
   height: 200px;
   width: 190px;
 }
+
+
+/* ========== 404 PAGE ========== */
+
+.error-page-container {
+  width: 75%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page-container h2, p {
+  color: var(--black);
+}
+
+.error-page-container p {
+  font-size: 1.2rem;
+  padding-top: 1em;
+}
+
+.error-page-container_box {
+  background-color: white;
+  overflow:hidden; 
+  padding: 4em;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  border-radius: 0.5rem; 
+  text-align: center;
+}
+
+.error-page-container h1 {
+  font-size: 4rem;
+  color: var(--dark-pink);
+}
+
+.error-page-link {
+  display: block;
+  margin: 3em auto 0; 
+}
+
+@media only screen and (min-width: 992px) {
+  .error-page-container h1 {
+    font-size: 8rem;
+  }
+}
