@@ -24,7 +24,7 @@ function App() {
           <Route path="notes" element={<Notes />} />
           <Route path="yoga" element={<Yoga />} />
           <Route path="linkpage" element={<LinkPage />} />
-          <Route path="404" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         </main>
       <Footer />
