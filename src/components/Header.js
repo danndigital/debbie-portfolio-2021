@@ -64,8 +64,8 @@ gsap.from(headerBtn, {
           }}
           className="header-copy"
         >
-          My social media knowledge and experience of content creation help me
-          to deliver beautiful websites with JavaScript, React and TailwindCSS.
+          My career as a developer and my experience of marketing help me
+          to deliver beautiful websites with Vue or React, Strapi and TailwindCSS.
         </p>
         <HashLinkButton
           to="#contact"

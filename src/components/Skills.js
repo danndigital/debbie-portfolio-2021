@@ -1,25 +1,25 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si"
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
+import { SiNuxtdotjs } from "react-icons/si";
+import { SiStrapi } from "react-icons/si";
 
 
 const Skills = () => {
   return (
     <div className="skills">
       <div className="skill">
-        <FaHtml5 className="skill-icon" />
-        <p>HTML</p>
+        <FaVuejs  className="skill-icon" />
+        <p>Vue 3</p>
       </div>
       <div className="skill">
-        <FaCss3 className="skill-icon" />
-        <p>CSS</p>
+        <SiNuxtdotjs  className="skill-icon" />
+        <p>Nuxt 3</p>
       </div>
       <div className="skill">
-        <SiJavascript className="skill-icon" />
-        <p>JavaScript</p>
+        <SiStrapi  className="skill-icon" />
+        <p>Strapi </p>
       </div>
       <div className="skill">
         <FaReact className="skill-icon" />

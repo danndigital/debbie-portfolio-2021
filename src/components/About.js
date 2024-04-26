@@ -11,15 +11,12 @@ const About = () => {
         <h2>Who am I?</h2>
 
         <p>
-          I am a self-taught frontend developer in the UK. I'm also a yoga
-          teacher and bake pretty tasty cakes (or at least that’s what people
+          I am a self-taught frontend developer in the UK. I also love the gym, gardening in fair weather and bake pretty tasty cakes (or at least that’s what people
           tell me).
         </p>
-            <br/>
         <p>
-          My background is in digital marketing for large businesses. My social
-          media knowledge and experience of content creation help me to deliver
-          beautiful websites with JavaScript, React and TailwindCSS.
+          My background is in digital marketing for large businesses. My career as a developer and my experience of content creation help me to deliver
+          beautiful websites with Vue or React, Strapi and TailwindCSS.
         </p>
       </div>
     </section>
