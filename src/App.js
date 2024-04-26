@@ -10,6 +10,7 @@ import ScrollToTop from "react-scroll-to-top";
 import ScrollUp from "./components/ScrollUp"; 
 import "./App.css";
 import ErrorPage from "./components/404";
+import YogaNuxt from "./components/YogaNuxt";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="buzzphonics" element={<Buzzphonics />} />
           <Route path="notes" element={<Notes />} />
           <Route path="yoga" element={<Yoga />} />
+          <Route path="yoganuxt" element={<YogaNuxt />} />
           <Route path="linkpage" element={<LinkPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
